@@ -5,7 +5,6 @@ function ContactForm() {
     async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
         // event.preventDefault();
         const formData = new FormData(event.target as HTMLFormElement);
-        formData.append("subject", "New Contact from MZP Website");
         formData.append("access_key", "b3fd4f3c-7336-40e7-b2af-302d09ba0e98");
         const object = Object.fromEntries(formData);
         const json = JSON.stringify(object);
@@ -28,7 +27,9 @@ function ContactForm() {
   return (
     <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
       <div className="relative p-8 bg-white dark:text-black rounded-lg shadow-lg sm:p-12">
-        <form onSubmit={handleSubmit}>
+        <form method="POST" onSubmit={handleSubmit}>
+         <input type="hidden" name="from_name" value="Zumry's Website" />
+         <input type="hidden" name="subject" value="New Contact from my Website" />
           <ContactInputBox type="text" required name="name" placeholder="Your Name" />
           <ContactInputBox type="text" required name="email" placeholder="Your Email" />
           <ContactInputBox type="text" required={false} name="phone" placeholder="Your Phone" />
@@ -38,6 +39,7 @@ function ContactForm() {
             name="details"
             defaultValue=""
           />
+          <input type="checkbox" name="botcheck" className="hidden" />
           <div>
             <button
               type="submit"
@@ -98,6 +100,7 @@ const ContactInputBox = ({
       <div className="mb-6">
         <input
           required={required}
+          autoComplete="true"
           type={type}
           placeholder={placeholder}
           name={name}
