@@ -23,6 +23,7 @@ export default function RootLayout({
       >
         <Provider>
           <Navbar />
+          <hr className="divide max-w-6xl mx-auto mt-2" />
           <main className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             {children}
           </main>

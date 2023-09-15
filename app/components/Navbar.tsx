@@ -10,7 +10,7 @@ function Navbar() {
   let desktopLinkClasses =
     "border-transparent text-gray-500 dark:text-gray-300 dark:hover:text-white inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium";
   let desktopActiveLinkClasses =
-    "border-teal-500 dark:text-white h-full inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium";
+    "dark:text-white h-full inline-flex items-center px-3 text-sm font-medium bg-teal-500 dark:bg-teal-200 dark:text-black text-bold";
   let mobileLinkClasses =
   "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-teal-500 block pl-3 pr-4 py-2 border-l-4 text-base font-medium dark:text-white"
   let mobileActiveLinkClasses =
@@ -20,7 +20,7 @@ function Navbar() {
     <Disclosure as="nav">
       {({ open }) => (
         <>
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 bg-teal">
             <div className="flex justify-between h-16">
               <div className="flex justify-between w-full">
                 <div className="flex items-center">
