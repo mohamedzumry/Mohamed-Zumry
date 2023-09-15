@@ -15,8 +15,8 @@ function Home() {
           Home
         </h1>
       </div> */}
-      <div className="items-center space-y-2 xl:grid xl:grid-cols-3 xl:gap-x-8 xl:space-y-0">
-        <div className="flex flex-col items-center pt-8">
+      <div className="items-center space-y-2 xl:grid xl:grid-cols-3 xl:gap-x-8 xl:space-y-0 lg:h-screen">
+        <div className="flex flex-col items-center pt-8 mx-auto">
           <Image
             alt="Picture of Mohamed Zumry"
             src={Me}

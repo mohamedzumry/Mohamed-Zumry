@@ -1,12 +1,14 @@
-"use client";
 import React from "react";
 import ContactForm from "../components/ContactForm";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: 'Contact Us | Mohamed Zumry',
-  description: 'Contact page for Mohamed Zumry portfolio website.',
   keywords: 'contact, contact us, contact me, contact zumry, contact mohamed zumry, contact mohamed, contact zumry, contact mohamed zumry',
+  openGraph: {
+    title: 'Contact Us | Mohamed Zumry',
+    description: 'Contact page for Mohamed Zumry portfolio website.',
+  },
 }
 
 function Contact() {

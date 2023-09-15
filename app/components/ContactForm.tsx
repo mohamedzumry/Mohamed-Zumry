@@ -1,3 +1,4 @@
+"use client";
 import React, { HTMLInputTypeAttribute } from "react";
 
 function ContactForm() {
