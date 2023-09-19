@@ -25,11 +25,11 @@ function Contact() {
                 <h2 className="mb-6 text-[32px] font-bold uppercase text-dark sm:text-[40px] lg:text-[36px] xl:text-[40px]">
                   GET IN TOUCH WITH US
                 </h2>
-                <p className="text-base leading-relaxed mb-9 text-body-color">
+                {/* <p className="text-base leading-relaxed mb-9 text-body-color">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eius tempor incididunt ut labore e dolore magna aliqua. Ut
                   enim adiqua minim veniam quis nostrud exercitation ullamco
-                </p>
+                </p> */}
                 <div className="mb-8 flex w-full max-w-[370px]">
                   <div className="mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-primary bg-opacity-5 text-primary sm:h-[70px] sm:max-w-[70px]">
                     <svg
@@ -43,10 +43,10 @@ function Contact() {
                   </div>
                   <div className="w-full">
                     <h4 className="mb-1 text-xl font-bold text-dark">
-                      Our Location
+                      Address
                     </h4>
                     <p className="text-base text-body-color">
-                      99 S.t Jomblo Park Pekanbaru 28292. Indonesia
+                      686/1A, Galle Road, Kautara South
                     </p>
                   </div>
                 </div>
@@ -68,7 +68,7 @@ function Contact() {
                       Phone Number
                     </h4>
                     <p className="text-base text-body-color">
-                      (+62)81 414 257 9980
+                      (+94)76 408 1761
                     </p>
                   </div>
                 </div>
@@ -88,7 +88,7 @@ function Contact() {
                       Email Address
                     </h4>
                     <p className="text-base text-body-color">
-                      info@yourdomain.com
+                      zumry.official@gmail.com
                     </p>
                   </div>
                 </div>

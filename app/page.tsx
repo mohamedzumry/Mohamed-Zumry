@@ -3,9 +3,9 @@ import Me from "@/public/images/zumry.jpeg";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: 'Home | Mohamed Zumry',
-  description: 'Homepage for Mohamed Zumry portfolio website.',
-}
+  title: "Home | Mohamed Zumry",
+  description: "Homepage for Mohamed Zumry portfolio website.",
+};
 
 function Home() {
   return (
@@ -67,18 +67,31 @@ function Home() {
               </svg>
             </a>
           </div>
+          <a href="/docs/cv.pdf" download={"Mohamed Zumry Resume"}>
+            <button className="bg-teal-500 hover:bg-teal-600 text-black my-2 font-bold py-2 px-4 rounded inline-flex items-center">
+              <svg
+                className="fill-current w-4 h-4 mr-2"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+              >
+                <path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z" />
+              </svg>
+              <span>Resume</span>
+            </button>
+          </a>
         </div>
 
         <div className="prose max-w-none prose-lg pt-8 pb-7 dark:prose-invert xl:col-span-2">
           <p>
-            Hey everyone my name is Mohamed Zumry, I am 22 years old and I am a Full Stack
-            developer based in Kalutara,Sri Lanka.
+            Hey everyone my name is Mohamed Zumry, I am 22 years old and I am a
+            Full Stack developer based in Kalutara,Sri Lanka.
           </p>
           <p>
-            I love building Full Stack applications with React. When I discovered React, I was blown away by its
-            interactivity and speed. Its virtual DOM and efficient rendering
-            mechanisms allowed me to create dynamic user interfaces that
-            responded to user actions in real-time.
+            I love building Full Stack applications with React. When I
+            discovered React, I was blown away by its interactivity and speed.
+            Its virtual DOM and efficient rendering mechanisms allowed me to
+            create dynamic user interfaces that responded to user actions in
+            real-time.
           </p>
           <p>
             Building applications with Reactand sharing them on YouTube is my

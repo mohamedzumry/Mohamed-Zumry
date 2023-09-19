@@ -27,7 +27,7 @@ function ContactForm() {
   return (
     <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
       <div className="relative p-8 bg-white dark:text-black rounded-lg shadow-lg sm:p-12">
-        <form method="POST" onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit}>
          <input type="hidden" name="from_name" value="Zumry's Website" />
          <input type="hidden" name="subject" value="New Contact from my Website" />
           <ContactInputBox type="text" required name="name" placeholder="Your Name" />
